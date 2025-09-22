@@ -1,15 +1,14 @@
 package com.chatbot.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
 
 import lombok.Data;
 import lombok.ToString;
 
 @Data
 @ToString
-@Component
-@ConfigurationProperties(prefix = "whatsapp")
+@ConfigurationProperties("whatsapp")
+
 public class WhatsAppProperties {
     private String apiUrl;
     private String phoneNumberId;
